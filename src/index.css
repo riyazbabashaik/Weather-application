@@ -1,0 +1,247 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.App{
+  width: 100%;
+  min-height:100vh;
+  max-height:fit-content;
+  color: rgb(255, 255, 255);
+  /* background: url(C:\weather\wthr-app\src\assets\bk.jpg) no-repeat center center/cover; */
+  /* background: url(C:/weather/wthr-app/src/assets/rainyV.mp4) ; */
+  z-index: -1;
+  position: absolute;
+}
+video{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#log{
+  width:80px;
+  height: 80px;
+}
+.search{
+  position: relative;
+  margin-top: 10px;
+  padding-top: 5px;
+  
+}
+.search input{
+  margin-left: 200px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  height: 35px;
+  color: aliceblue;
+  border: 1.5px solid rgba(255, 255, 255, 0.952);
+  background: rgba(255, 255, 255, 0.084);
+  outline: none;
+  justify-content: center;
+  padding-left: 20px;
+  backdrop-filter: blur(5px);
+}
+.search input::placeholder{
+  padding-left: 40px;
+}
+/* .search input:focus::placeholder{
+  color: transparent;
+} */
+.search img{
+  position: absolute;
+  top: 55%;
+  left: 92%;
+}
+
+::placeholder{
+  color: white;
+}
+ .top{
+  display: flex;
+  justify-content: center;
+ }
+ .location-cover{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ .location{
+  border-radius: 8px;
+  text-align: center;
+  width:700px;
+  max-height: auto;
+  margin: 10px;
+ }
+ video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+
+.main{
+  /* box-shadow: 0rem 3rem 9rem 0.3rem rgba(0, 0, 0, 0.5); */
+  max-width:700px;
+  max-height: auto;
+  margin:10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:  center ;
+  border: 1.5px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.082);
+  justify-content: space-around;
+  backdrop-filter: blur(5px);
+}
+.main-top{
+  height: auto;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px;
+}
+@media only screen and (max-width:444px){
+  .main-top{
+    flex-direction: column;
+  }
+  .wind{
+    max-width: 260px;
+  }
+  .humidity{
+    max-width: 260px;
+  }
+  .search input{
+      max-width: 200px;
+  }
+}
+@media only screen and (max-width:1083px) {
+  .search input{
+    margin-left: 0px;
+  }
+  
+}
+.info{
+  padding-bottom: 8px;
+}
+.info p{
+  padding: 2px;
+  font-size: 20px;
+}
+.temp{
+  font-size: 44px;
+  padding-bottom: 8px;
+}
+.sum{
+  text-align: center;
+}
+.main-bottom{
+  margin-top: 30px;
+  margin-bottom: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-around;
+}
+.wind{
+  margin: 10px;
+  padding: 10px;
+  width: 290px;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.596);
+  background: rgba(255, 255, 255, 0.08);
+  text-align:center ;
+  align-content: center;
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+}
+.humidity{
+  margin: 10px;
+  padding: 10px;
+  width: 290px;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  background: rgba(255, 255, 255, 0.08);
+  text-align:center ;
+  align-content: center;
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  
+}
+
+.bottom{
+  display: flex;
+  position:relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.day1{
+  margin: 10px;
+  padding: 15px;
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(3px);
+}
+.day2{
+  margin: 10px;
+  padding: 15px;
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(3px);
+}
+.day3{
+  margin: 10px;
+  padding: 15px;
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(3px);
+}
+.day4{
+  margin: 10px;
+  padding: 15px;
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  border: 1.5px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(3px);
+}
+.day5{
+  margin: 10px;
+  padding: 15px;
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  border: 1.5px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(3px);
+}
